@@ -1,0 +1,904 @@
+.header
+  position: relative
+  padding-bottom: 350px
+  z-index: 1
+  &-bg
+    position: absolute
+    width: 100%
+    height: 100%
+    min-height: 100%
+    background-image: url('../img/bg_1.jpg')
+    background-position: top center
+    background-size: cover
+    z-index: -1
+  &-parallax
+    position: absolute !important
+    &_1
+      top: 75px !important
+      left: 57% !important
+    &_2
+      top: 85px !important
+      left: auto !important
+      right: 57% !important
+  &-top 
+    padding-top: 55px
+  &-time
+    &__text
+      padding: 30px
+      background-image: url('../img/header_1.png')
+      background-position: center center
+      background-size: 100% 100%
+      background-repeat: no-repeat
+      display: block
+      font-style: normal
+      font-weight: bold
+      font-size: 2.1rem
+      line-height: 34px
+  &-lang
+    font-style: normal
+    font-weight: bold
+    font-size: 2.1rem
+    line-height: 37px
+    text-align: center
+    display: inline-block
+    text-decoration: none
+    color: #ffffff  
+    padding-top: 5px
+    padding-left: 15px
+    transition: all 0.3s 
+    &:hover
+      color: $color-1
+    &__wrap
+      margin-right: 80px
+  &-block
+  &-social
+    &s 
+      z-index: 99
+      right: 10px
+      position: absolute
+      &__wrap
+        z-index: 99
+        position: fixed
+        margin-top: 55px
+        top: 0
+        & .container
+          position: relative
+    &__icon
+      display: block
+      width: 48px
+      height: 48px
+      border-radius: 50%
+      margin-bottom: 20px
+      // margin-left: 50px
+      transition: all 0.3s 
+      & svg *
+        transition: all 0.3s 
+        fill: $color-1
+      &:hover
+        background: $color-1
+        & svg *
+          fill: $color-3
+  &-middle
+    margin-top: -60px
+  &-logo
+    margin-bottom: 10px
+  &-text
+    width: 100%
+    max-width: 1000px
+    font-style: normal
+    font-weight: bold
+    font-size: 85.1226px
+    line-height: 85px
+    text-shadow: 1px 3px 0px #ffffff, -3px -1px 0px #ffffff, -3px 3px 0px #ffffff, 1px -1px 0px #ffffff
+    &__fs
+      transform: matrix(1, -0.06, 0.05, 1, 0, 0)
+      position: relative
+      &::after
+        // content: url(../img/header_3.png)
+        display: block
+        position: absolute
+        right: -80px
+        top: -10px
+    &__sec
+      position: relative
+      &::before
+        // content: url(../img/header_4.png)
+        display: block
+        position: absolute
+        left: 210px
+        top: -30px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 5.5rem
+      line-height: 5.8rem
+      text-align: center
+      color: #FFFFFF
+      text-shadow: 3px 3px 0px #006A5D, -3px -3px 0px #006A5D, -3px 3px 0px #006A5D, 3px -3px 0px #006A5D, -8px 8px 0px #019191
+    &__subtitle
+      font-style: normal
+      font-weight: bold
+      font-size: 3.3rem
+      line-height: 3.7rem
+      letter-spacing: 0.1rem
+      text-align: center
+      color: #FFFFFF
+      background-image: url('../img/header_2.png')
+      background-position: center center
+      background-size: 100% 100%
+      background-repeat: no-repeat
+      padding: 170px 150px 20px 120px
+      margin-top: -170px
+      z-index: -1
+
+
+// MAIN 
+.main
+  margin-top: -500px
+  padding-top: 400px
+  padding-bottom: 450px
+  position: relative
+  z-index: 2
+  &-wrap
+    position: relative
+  &-row
+    position: relative
+  &-bg 
+    // overflow-x: hidden
+    // overflow-y: visible 
+    position: absolute
+    // top: -400px
+    top: 0px
+    width: 100%
+    max-width: 100%
+    height: 100%
+    height: calc(100% + 410px)
+    min-height: 100%
+    background-image: url('../img/bg_2.png')
+    background-position: top center
+    background-size: cover
+    background-repeat: no-repeat
+    z-index: -1
+  &-col
+    position: relative
+    &_1
+      width: 475px
+      height: 430px
+    &_2
+      width: 445px
+      height: 420px
+      margin-top: 100px
+    &_3
+      width: 310px
+      height: 300px
+      margin-left: 120px
+      margin-top: 150px
+    &_4
+      width: 500px
+      height: 390px
+      margin-top: 300px
+      // margin-right: -100px
+    &__wrap
+      background-position: bottom center
+      background-size: auto
+      background-repeat: no-repeat
+      position: relative
+      z-index: 1
+      &_1
+        width: 475px
+        height: 430px
+        background-image: url(../img/main-bg_1.png)
+      &_2
+        width: 445px
+        height: 420px
+        background-image: url(../img/main-bg_2.png)
+      &_3
+        width: 310px
+        height: 300px
+        background-image: url(../img/main-bg_3.png)
+      &_4
+        width: 500px
+        height: 390px
+        background-image: url(../img/main-bg_4.png)
+        background-position: left bottom
+  &__img
+    position: absolute
+    z-index: 2
+    &_1-1
+      left: 6%
+      top: 10px
+    &_1-2
+      top: 20px
+      left: 39%
+    &_1-3
+      top: 130px
+      left: 12%
+    &_1-4
+      top: 110px
+      left: 48%
+    &_2-1
+      left: 33%
+      top: 100px
+    &_2-2
+      top: 10px
+      left: 8%
+    &_2-3
+      top: 120px
+      left: 3%
+    &_3-1
+      left: 20px
+    &_4-1
+      top: 50px
+      right: -10px
+    &_4-2
+      left: -10px
+      top: 90px
+    &_4-3
+      left: 100px
+      top: 180px
+  &__title
+    position: absolute
+    top: 110%
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 2rem
+    text-transform: uppercase
+    color: #FFFFFF
+    &_1
+      right: 50px
+    &_2
+      left: 80px
+    &_3
+      width: 500px
+    &_5
+      font-family: Bebas Neue
+      font-style: normal
+      font-weight: bold
+      font-size: 2.8rem
+      line-height: 2.8rem
+      color: #FFFFFF
+      margin-top: 40px
+      padding: 40px
+      width: 650px
+      height: 210px
+      background-position: center center
+      background-size: 100% 100%
+      background-repeat: no-repeat
+      padding: 50px 20px 30px 90px
+      background-image: url(../img/main-bg_5.png)
+    &_6
+      position: static
+      height: auto
+      font-family: Bebas Neue
+      font-style: normal
+      font-weight: bold
+      font-size: 4rem
+      line-height: 4rem
+      letter-spacing: 0.2rem
+      color: #FFFFFF
+      padding: 50px 40px 50px 40px
+      margin-left: auto
+      background-position: center center
+      background-size: 100% 100%
+      background-repeat: no-repeat
+      background-image: url(../img/main-bg_6.png)
+  &-number
+    position: absolute
+    font-style: normal
+    font-weight: bold
+    font-size: 5.1rem
+    line-height: 5.1rem
+    text-align: center
+    background-position: center center
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    z-index: 9
+    &_1
+      background-image: url(../img/number_1.png)
+      right: -70px
+      top: 120px
+      width: 121px
+      height: 135px
+      padding-top: 50px
+      padding-right: 40px
+      text-align: right
+    &_2
+      background-image: url(../img/number_2.png)
+      left: -90px
+      top: 200px
+      width: 107px
+      height: 100px
+      padding-top: 10px
+      padding-left: 40px
+      text-align: left
+    &_3
+      background-image: url(../img/number_3.png)
+      right: -80px
+      top: 10px
+      width: 106px
+      height: 97px
+      padding-top: 10px
+      padding-right: 30px
+      text-align: right
+    &_4
+      background-image: url(../img/number_4.png)
+      left: 130px
+      top: 50px
+      width: 100px
+      height: 97px
+      padding-top: 10px
+      padding-left: 40px
+      text-align: left
+  &__parallax
+    position: absolute
+    z-index: 0
+    &_1-1
+      left: auto
+      right: 74%
+      top: 170px
+    &_1-2
+      left: auto
+      right: 21%
+      top: 330px
+    &_1-3
+      left: 0
+      top: 1170px
+    &_1-4
+      left: auto
+      right: 0
+      top: 650px
+  &__arrow
+    position: absolute
+    &_1
+      left: 590px
+      top: 150px
+      width: 250px
+    &_2
+      top: 450px
+      left: 590px
+    &_3
+      width: 270px
+      left: 610px
+      top: 220px
+
+// SURPRISE
+
+.surprise
+  position: relative
+  z-index: 3
+  padding-top: 260px
+  margin-top: -300px
+  padding-bottom: 100px
+  &-bg 
+    position: absolute
+    top: 0px
+    width: 100%
+    max-width: 100%
+    height: 100%
+    height: calc(100% + 300px)
+    min-height: 100%
+    background-image: url('../img/bg_3.png')
+    background-position: top center
+    background-size: cover
+    z-index: -1
+  &-row
+    margin-top: 130px
+    padding-bottom: 30px
+  &-item
+    margin-left: 1%
+    margin-right: 1%
+    margin-bottom: 60px
+    &__img
+      background-size: 100% 100%
+      background-repeat: no-repeat
+      background-position: center center
+      align-items: flex-end
+      &_1 
+        width: 245px
+        height: 235px
+        background-image: url(../img/surprise_1.png)
+        & img
+          margin-bottom: 20px
+      &_2 
+        width: 245px
+        height: 235px
+        background-image: url(../img/surprise_2.png)
+        & img
+          margin-bottom: 10px
+      &_3 
+        width: 245px
+        height: 235px
+        background-image: url(../img/surprise_3.png)
+        & img
+          margin-bottom: 10px
+      &_4 
+        width: 245px
+        height: 235px
+        background-image: url(../img/surprise_4.png)
+        & img
+          margin-bottom: 10px
+      &_5 
+        width: 245px
+        height: 235px
+        background-image: url(../img/surprise_5.png)
+        margin-right: 20px
+      &_6 
+        width: 245px
+        height: 235px
+        background-image: url(../img/surprise_6.png)
+    &__title
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 2rem
+      line-height: 35px
+      text-transform: uppercase
+      padding-top: 20px
+      color: #FFFFFF
+      text-align: center
+
+// FOOTER
+
+.footer
+  position: relative
+  z-index: 4
+  margin-top: -100px
+  padding-bottom: 100px
+  padding-top: 200px
+  &-middle
+    justify-content: center
+  &-bg 
+    position: absolute
+    top: -0px
+    width: 100%
+    max-width: 100%
+    height: 100%
+    min-height: 100%
+    background-image: url('../img/bg_4.png')
+    background-position: top center
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    z-index: -1
+  &__parallax
+    position: absolute
+    &_1
+      bottom: 100px
+      left: 0
+    &_2
+      top: -50px
+      right: 0
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 3.5rem
+    line-height: 3.8rem
+    text-align: center
+    color: #FFFFFF
+    margin-bottom: 40px
+    margin-bottom: 50px
+  &__subtitle
+    font-family: Bebas Neue
+    font-style: normal
+    font-weight: bold
+    font-size: 2.3rem
+    line-height: 35px
+    text-align: center
+    letter-spacing: 0.04em
+    color: #FFFFFF
+  &-row
+    margin-top: 20px
+    background-position: top center
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    &_bg
+      position: relative
+      background-image: url('../img/footer_3.png')
+  &-item
+    background-size: 100% 100%
+    background-position: center center
+    text-align: center
+    padding-top: 45px
+    padding-bottom: 40px
+    &_1
+      background-image: url(../img/footer-item_1.png)
+    &_2
+      // background-image: url(../img/footer-item_2.png)
+    &__title
+      padding-left: 60px
+      font-style: normal
+      font-weight: bold
+      font-size: 2.1rem
+      line-height: 2.2rem
+      letter-spacing: 0.04em
+    &__tell
+      padding-top: 80px
+      font-style: normal
+      font-weight: bold
+      font-size: 2.1rem
+      line-height: 2.7rem
+      text-align: center
+      color: #FDFDFD
+      & a
+        display: inline-block
+        text-decoration: none
+        font-family: Bebas Neue
+        font-size: 2.5rem
+        margin-left: 10px
+        position: relative
+        &::after
+          content: ''
+          position: absolute
+          display: block
+          height: 5px
+          width: 0%
+          bottom: -4px
+          background: $color-2
+          transition: all 0.3s
+          left: 50%
+        &:hover::after
+          left: 0%
+          width: 100%
+      &-desc
+        display: block
+        margin-top: 10px
+        margin-left: 10px
+        font-family: Open Sans
+        font-style: normal
+        font-weight: bold
+        font-size: 1.6rem
+        line-height: 26px
+        text-transform: uppercase
+        color: #FDFDFD
+  &-svg 
+    margin-top: 50px
+    margin-right: 5px
+  &-link 
+    display: block
+    margin-top: 10px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 19.3725px
+    line-height: 26px
+    text-align: center
+    text-decoration-line: underline
+    text-transform: uppercase
+  &-copyright
+    display: flex
+    justify-content: flex-end
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 1.1rem
+    line-height: 118%
+    text-transform: uppercase
+    color: #FFFFFF
+
+@media (max-width: 1224px)
+  .main
+    &__arrow
+      display: none !important
+@media (max-width: 1024px)
+  .main
+    margin-bottom: 150px
+    padding-bottom: 0
+    &-bg  
+      background-size: auto
+    &-row
+      flex-direction: column
+      align-items: center
+    &__title
+      &_1
+        left: 20%
+      &_5
+        position: static
+        margin-top: 200px
+      &_6 
+        margin-top: 70px
+        font-size: 2.8rem
+        line-height: 2.9rem
+        margin-right: auto
+    &-col
+      &_1
+        margin-left: 0
+      &_2
+        margin-top: 150px
+        margin-right: 0
+      &_3
+        margin-left: 0
+        margin-top: 150px
+      &_4
+        margin-top: 150px
+        top: 0 
+        position: static !important
+    &__arrow
+      display: none !important
+    &__parallax
+      &_1-2, &_2-4
+  .surprise
+    &-row
+      justify-content: space-around
+    &-item
+      width: 50%
+      justify-content: center
+      align-items: center
+      margin-bottom: 50px
+  .footer
+    &-bg
+      background-size: cover
+    &__parallax
+          z-index: -1
+    &-row
+      flex-wrap: wrap
+    &-item
+      // width: 100%
+      &__tell
+        flex-wrap: wrap
+        & .col, & span
+          display: block
+          width: 100%
+          margin-bottom: 15px
+@media (max-width: 790px)
+  .bg 
+    max-width: 100%
+  .header
+    overflow: hidden
+    padding-bottom: 400px
+    &-middle
+      margin-top: 0px
+    &-text 
+      text-align: center
+      &__fs::after
+        right: -5px
+      &__sec::before
+        left: 40px
+      &__subtitle
+        max-width: 650px
+        width: 100%
+        font-size: 3rem
+        padding: 80px 10px 15px 40px
+        margin-top: -70px
+    &-social__icon svg * 
+      fill: #ffffff
+  .main
+    margin-bottom: 0
+    padding-top: 300px
+    padding-bottom: 200px
+    &-wrap
+    &__parallax
+      &_1-1
+        left: -30px
+        top: 180px
+      &_1-2
+        left: auto
+        right: -30px
+        top: 570px
+      &_1-3
+        left: -30px
+        top: 1180px
+      &_1-4
+        left: auto
+        right: -30px
+        top: 1680px
+    &__title
+      text-align: center
+      max-width: 100%
+      width: 100%
+      left: auto
+      right: auto
+      &_5
+        max-width: 650px
+        width: 100%
+        font-size: 3.2rem
+      &_6
+        max-width: 500px
+        width: 100%
+        font-size: 3.2rem
+    &-number
+      &_1
+        right: 10px
+        top: -20px
+      &_2
+        bottom: auto
+        left: 10px
+        top: -60px
+      &_3
+        bottom: auto
+        right: 0px
+        top: -70px
+    &-col
+      max-width: 100% 
+      &_2
+        // overflow: hidden
+      &__wrap
+        max-width: 100% 
+  .surprise
+    padding-bottom: 0
+    &-item
+      width: 100%
+      min-width: 100%
+  .footer-bg
+    background-size: cover
+@media (max-width: 560px)
+  .header
+    &-top
+      flex-direction: column
+    &-block
+      flex-direction: column-reverse
+    &-lang__wrap
+      text-align: center
+      margin-right: 0
+      & a
+        padding-left: 10px
+        padding-right: 10px
+    &-socials
+      margin-top: 20px
+      // flex-direction: row
+      justify-content: center
+      & a
+        margin-left: 10px
+        // margin-right: 10px
+        width: 38px
+        height: 38px
+      & svg 
+        width: 38px
+        height: 38px
+    &-middle
+      margin-top: 40px
+    &-bg img
+      top: 100px !important
+      left: 0 !important
+      right: 0 !important
+    &-text 
+      max-width: 300px
+      font-size: 4.8rem
+      line-height: 65px
+      &:after, &:before 
+        content: none
+      &__subtitle
+        background-size: cover
+  .main
+    padding-bottom: 50px
+    &__parallax
+      &_1-2
+    &-col
+      &_1
+        width: 300px
+        height: 300px
+      &_2
+        width: 300px
+        height: 300px
+      &_3
+        // margin-top: 450px
+        width: 300px
+        height: 270px
+      &_4
+        width: 300px
+        height: 330px
+        // margin-top: 320px
+      &__wrap
+        background-size: contain
+        &_1
+          width: 300px
+          height: 300px
+        &_2
+          width: 300px
+          height: 300px
+        &_3
+          width: 300px
+          height: 270px
+        &_4
+          width: 300px
+          height: 330px
+    &__img
+      &_1-1
+        width: 145px
+        height: 155px
+      &_1-2
+        width: 145px
+        height: 170px
+      &_1-3
+        width: 145px 
+        height: 150px
+      &_1-4
+        width: 145px
+        height: 166px
+      &_2-1
+        width: 192px
+        height: 192px
+        bottom: 31px
+      &_2-2
+        width: 160px
+        height: 160px
+        top: 19px
+        left: 10%
+      &_2-3
+        top: 105px
+        width: 180px
+        height: 170px
+      &_4-1
+        right: 10px
+        width: 190px
+        height: 190px
+      &_4-2
+        width: 260px
+        height: 190px
+      &_4-3
+        width: 190px
+        height: 120px
+        left: 14%
+        bottom: 6px
+    &-number
+      &_1
+        font-size: 5rem
+        width: 100px
+        height: 80px
+        padding-top: 10px
+        padding-bottom: 20px
+        top: -50px
+        line-height: 60px
+      &_2
+        font-size: 5rem
+        width: 100px
+        height: 80px
+        padding-top: 10px
+        padding-bottom: 20px
+        top: -30px
+        line-height: 60px
+      &_3
+        font-size: 5rem
+        width: 100px
+        height: 80px
+        padding-top: 10px
+        padding-bottom: 20px
+        top: -30px
+        line-height: 60px
+      &_4
+        font-size: 5rem
+        width: 100px
+        height: 80px
+        padding-top: 10px
+        padding-bottom: 20px
+        top: 35px
+        left: 40px
+        line-height: 60px
+    &__title_5, &__title_6
+      height: auto
+      padding: 20px 15px 25px 15px
+      font-size: 2.7rem
+      line-height: 30px
+    &__title_5
+      background-size: auto
+  .surprise
+    margin-top: -200px
+    &-row
+      margin-top: 30px
+      padding-bottom: 90px
+  .footer
+    padding-top: 70px
+    &-middle
+      flex-direction: column
+    &-row_bg
+      background-size: cover
+      padding: 30px 0px
+    &-copyright 
+      margin-top: 30px
+      width: 100%
+      justify-content: center
+      text-align: center
+      font-size: 1.5rem
+      & span 
+        display: block
+    &-item
+      padding-top: 15px
+      padding-bottom: 15px
+      &__title
+        padding-left: 0
+        text-align: center
+        font-size: 1.9rem
+    &-bottom
+      margin-right: auto
+      & svg
+        margin-top: 0px
+        margin-right: auto
